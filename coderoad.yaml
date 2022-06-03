@@ -20,3 +20,9 @@ levels:
   - id: '1'
     steps:
       - id: '1.1'
+  - id: '2'
+    steps:
+      - id: '2.1'
+        setup:
+          files:
+            - hello.py
