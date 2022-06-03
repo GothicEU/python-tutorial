@@ -1,0 +1,16 @@
+{
+  "name": "coderoad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello.py",
+  "scripts": {
+    "programmatic-test": "mocha --reporter=mocha-tap-reporter",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^10.0.0",
+    "mocha-tap-reporter": "^0.1.3"
+  }
+}
