@@ -1,0 +1,22 @@
+id: '1'
+version: '0.1.0'
+config:
+  testRunner:
+    command: npm run test --
+    args:
+      filter: --grep
+      tap: --reporter=mocha-tap-reporter
+    directory: coderoad
+  setup:
+    commands:
+      - cd coderoad && npm install
+  repo:
+    uri: https://github.com/GothicEU/python-tutorial
+    branch: v0.1.0
+  dependencies:
+    - name: node
+      version: '>=10'
+levels:
+  - id: '1'
+    steps:
+      - id: '1.1'
