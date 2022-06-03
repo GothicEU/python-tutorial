@@ -25,3 +25,25 @@ describe('python-tutorial folder', () => {
     assert(rootDir.indexOf('hello.py') >= 0)
   })
 })
+
+const readFile = util.promisify(fs.readFile)
+const getIndexFile = async (dir = process.cwd()) => {
+  const pathToIndex = path.join(dir, '..', 'hello.py')
+  const indexFile = await readFile(pathToIndex)
+
+  if (!indexFile) {
+    throw new Error(`Could not find ${pathToIndex}`)
+  }
+  return indexFile
+}
+
+describe('hello.py', () => {
+  let indexFile
+  before(async () => {
+    indexFile = await getIndexFile()
+  })
+
+  it('should have a code', () => {
+    assert(/print\(\"hello, world\"\)/i.test(indexFile) || /print\(\'hello, world\'\)/i.test(indexFile))
+  })
+})
