@@ -45,7 +45,7 @@
           "content": "Create an `hello.py` file to pass this lesson.",
           "hints": [
             "Click on the new file icon next to the folder's name in explorator.",
-            "Name the file 'hello.py'"
+            "Name the file `hello.py`"
           ],
           "setup": {
             "commits": [
@@ -55,6 +55,34 @@
           "solution": {
             "commits": [
               "82ac76a9f816b88d857ef76d5c30815480829ffc"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Print 'hello, world'",
+      "summary": "Add `print(\"hello, world\")` to the hello.py file.",
+      "content": "`print(\"hello, world\")` will display text on your screen. Add this line to the `hello.py` file.",
+      "steps": [
+        {
+          "id": "2.1",
+          "setup": {
+            "files": [
+              "hello.py"
+            ],
+            "commits": [
+              "f9622c6c1094e7f6c5e52dfb86446833b24a1fb4"
+            ]
+          },
+          "content": "Add `print` command.",
+          "hints": [
+            "type `print(\"hello, world\")` in the `hello.py` file."
+          ],
+          "solution": {
+            "commits": [
+              "e6ce655ddb9dd5f34b6c3afeb63842dcf04fe298"
             ]
           }
         }
